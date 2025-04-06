@@ -1,0 +1,40 @@
+{
+  "name": "Meu Tempo",
+  "dockerFile": "Dockerfile",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+	"customizations": {
+		"vscode": {
+				"extensions": [
+					"eamodio.gitlens",
+					"yzhang.markdown-all-in-one",
+					"alefragnani.project-manager",
+					"natqe.reload",
+					"vscode-icons-team.vscode-icons",
+					"redhat.vscode-yaml",
+					"dracula-theme.theme-dracula",
+					"postman.postman-for-vscode",
+					"esbenp.prettier-vscode",
+					"usernamehw.errorlens",
+					"visualstudioexptteam.vscodeintellicode",
+					"visualstudioexptteam.intellicode-api-usage-examples",
+					"visualstudioexptteam.vscodeintellicode-completions",
+					"ms-vscode.vscode-typescript-next",
+					"ms-vscode.vscode-typescript-tslint-plugin",
+					"ms-vscode.js-debug",
+					"ms-vscode.js-debug-companion",
+					"ms-vscode.makefile-tools",
+					"orta.vscode-jest"
+				]
+		}
+	},
+	"remoteUser": "vscode",
+	"mounts": [
+		{
+			"source": "/home/e.delatorre/.ssh",
+			"target": "/home/vscode/.ssh",
+			"type": "bind"
+		}
+	]
+}
